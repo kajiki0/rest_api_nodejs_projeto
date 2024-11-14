@@ -1,0 +1,57 @@
+#O que é uma REST(REpresentational State Transfer): Estado de transferencia representativo
+- é uma forma de transferir dados
+- rest api é uma alternativa a uma pagina tradicional da web
+
+->Metodo tradicional de uma pagina web
+
+Client(navegador) --------[request]---------->  Server
+                  <--------[response]---------  
+                         paginas html
+
+
+
+e se eu precisar apenas dos dados e nao das paginas html?
+
+->REST API
+
+|          |
+|          |          guarda e envia dados mas nao renderiza html
+|          |          -------------------------------------------->client(smarthphone)   
+|          |
+|[SERVIDOR]|            quer acessar funcionalidade de terceiros(ex:login com facebook)
+|          |          ---------------------------------------------> client(codigo)
+|          |
+|          |           trafega dados entre dispositivos(IOT)
+|          |           ---------------------------------------------> client(dispositivos)
+
+
+
+nao possui controle de estado, pois nao se preocupa com o client que esta conectada a ela
+
+########################################################################
+
+[Servidor REST(API)]
+[/usuarios]                 [/produtos]                 [/pedidos]
+(GET) (POST) (DELETE)      (GET) (POST) (PATCH)         (GET)
+     ^
+     | request(ex:json)
+     |
+     |-- response(json)
+       v
+--------------Client----------------------
+
+#########################################################################
+
+->Restrições de uma REST api
+
+cliente-servidor:                  nao utiliza sessao(stateless):                  cache:
+-a interface de usuario             -nenhum contexto do cliente é salvo             -respostas(responses)
+nao é importante                   no servidor                                      devem se auto definir se usam ou nao cache
+
+sistema em camadas:                interface uniforme:
+-servidores intermediarios          -recursos nao identificados na requisição, os dados transferidos
+podem ser usados sem que           sao desacoplados do schema do banco de dados
+o client saiba                     -mensagens auto-descritivas com links para recursos posteriores
+
+
+
