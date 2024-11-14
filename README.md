@@ -6,4 +6,6 @@ projeto visando entender mais profundamente como aplicações web funcionam acom
 
 ### outras fontes no caso de consulta e anotações que eu acho relevante:
 
-- nenhuma até o momento :)
+-[Introdução Express/Node](https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/Introduction)
+
+-[Middleware](https://aws.amazon.com/pt/what-is/middleware/)

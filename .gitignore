@@ -1,3 +1,5 @@
 #ignorar a pasta de modulos do node
 node_modules/
 
+#ignorar,por enquanto,os scripts
+*.js

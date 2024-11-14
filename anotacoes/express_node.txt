@@ -1,0 +1,28 @@
+#Node: 
+-ferramenta que permite codar em javascript no server-side
+-ou seja, nao precisamos do navegador
+
+
+#Express:
+-algumas tarefas em desenvolvimento web nao sao praticas apenas com o NodeJS
+
+- precisamos de frameworks web para gerenciar com mais eficiencia os diferentes verbos do protocolo
+HTTP(GET,POST,DELETE,entre outros).
+
+obs1: frameworks web servem para outras coisas, mas por enquanto vou manter essa definição inicial
+
+->voltando ao Express:
+
+-esse é o framework Node mais popular e a biblioteca "base" para uma serie de outros frameworks
+do Node.
+
+->o que o Express faz:
+    -Gerenciar requisições de diferentes verbos HTTP em diferentes URLs
+    -Integrar "view engines" para inserir dados nos templates
+    -Definir as configurações de web,ex:porta para conexao
+    -adicionar novos processos de requisição por meio de "middleware" em qualquer ponto
+    da sequencia de requisições
+
+obs2: middleware é uma "ponte" entre diversas ferramentas. Diferentes aplicações usam para se comunicar umas com as outras
+
+obs3: middleware se aplica à varios casos de uso da computação
